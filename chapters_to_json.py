@@ -20,7 +20,7 @@ with open(filename) as txt:
 
         # reading line by line from the text file
         # split String after first white space (seperates time data from chapter title)
-        # e.g. 00:00:00.000 Intro und Einführung ->
+        # e.g. 00:00:00.000 Intro und Einfuehrung ->     {"start": "00:00:00.000", "title": "Intro", "href": "", "image": ""}
         description = list(line.strip().split(" ", 1))
 
         # loop variable
